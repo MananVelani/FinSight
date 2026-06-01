@@ -1,0 +1,34 @@
+# .dockerignore for backend
+# Speeds up Docker builds by excluding unnecessary files
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment files (secrets must be set via Railway dashboard)
+.env
+.env.*
+
+# Large local data files
+uploads/
+data/
+*.log
+scratch/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Testing
+tests/
+.pytest_cache/
+.coverage
+
+# Development docs
+*.md
+implementation_plan_part*.md
+walkthrough.md
+task.md
+backend.md

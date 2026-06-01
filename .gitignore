@@ -1,0 +1,73 @@
+# ==================== Python ====================
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ==================== Virtual Environments ====================
+venv/
+.venv/
+env/
+ENV/
+
+# ==================== Environment Variables (SENSITIVE) ====================
+.env
+.env.*
+!.env.example
+
+# ==================== Testing ====================
+.pytest_cache/
+pytest-cache-files-*/
+.coverage
+htmlcov/
+*.log
+
+# ==================== Editors ====================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ==================== Backend Specific ====================
+backend/uploads/
+backend/data/bm25_indexes/
+backend/__pycache__/
+backend/.venv/
+backend/backend_log*.txt
+backend/celery_log*.txt
+backend/test_ingest*.log
+backend/scratch/
+backend/task.md
+backend/implementation_plan_part*.md
+backend/walkthrough.md
+
+# ==================== Frontend Specific ====================
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+frontend/.env.local
+frontend/.env.*.local
+
+# ==================== Infrastructure ====================
+# Qdrant native binary (downloaded locally)
+qdrant/*.exe
+qdrant/*.zip
+qdrant/storage/
+
+# Docker volumes
+pgdata/
+redisdata/
+qdrantdata/
+
+# ==================== Misc ====================
+*.pdf
+dummy.pdf
+test.pdf
+valid_test_doc.pdf
+data/
