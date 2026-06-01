@@ -1,3 +1,13 @@
+---
+title: FinSight AI
+emoji: 📈
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 🚀 FinSight AI: Enterprise-Grade Financial Document Intelligence
 
 FinSight AI is a production-ready, highly advanced Retrieval-Augmented Generation (RAG) platform tailored for the ingestion, querying, and analysis of complex documents such as financial reports, SEC filings, and corporate presentations.
