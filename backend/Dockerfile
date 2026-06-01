@@ -45,7 +45,7 @@ RUN mkdir -p /app/uploads /app/data/bm25_indexes
 RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
 
-EXPOSE 8000
+EXPOSE 7860
 
-# Run migrations then start server
-CMD alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 2
+# Run migrations then start server on Hugging Face's required port 7860
+CMD alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 7860 --workers 2
